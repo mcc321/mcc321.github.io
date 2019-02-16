@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="">
+<html lang="zh-CN">
 <head>
     
 
@@ -360,7 +360,7 @@
 
 <div id="article-share">
     
-    <div class="social-share" data-disabled="qzone, qq, weibo, douban"></div>
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
     
 </div>
 
@@ -368,7 +368,7 @@
 
             <div class="reprint">
                 <p>
-                    <span class="reprint-tip">Reprint please specify: </span>
+                    <span class="reprint-tip">转载请注明: </span>
                     <a href="http://mcc321.github.io" class="b-link-green">mcc</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
                     <a href="/2018/12/21/guan-yu-yi-xie-xiao-shi-de-xiang-fa/" class="b-link-green">关于一些小事的想法</a>
@@ -415,7 +415,7 @@
     <div class="row article-row">
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">Previous</div>
+            <div class="article-badge left-badge text-color">上一篇</div>
             <div class="card">
                 <a href="/2018/12/22/guan-yu-ping-mian-gang-ti-zi-you-du-de-ji-suan/">
                     <div class="card-image">
@@ -461,7 +461,7 @@ $$F=3n-2p_l-p_k$$
         
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">Next</div>
+            <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
                 <a href="/2018/12/20/zhang-bu-da-de-xian-sheng/">
                     <div class="card-image">
@@ -509,7 +509,7 @@ zhang不大的先生这个名字是由一个学长的网名改编的，挺符合
     </div>
     <div class="col l3 hide-on-med-and-down">
         <div class="toc-widget">
-            <div class="toc-title">TOC</div>
+            <div class="toc-title">目录</div>
             <div id="toc-content">
 
             </div>
@@ -523,7 +523,7 @@ zhang不大的先生这个名字是由一个学长的网名改编的，挺符合
         tocbot.init({
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
-            headingSelector: 'h2, h3, h4'
+            headingSelector: 'h1, h2, h3, h4, h5'
         });
 
         // modify the toc link href to support Chinese.
@@ -535,7 +535,7 @@ zhang不大的先生这个名字是由一个学长的网名改编的，挺符合
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
@@ -589,8 +589,8 @@ zhang不大的先生这个名字是由一个学长的网名改编的，挺符合
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title">Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword" class="search-input" autofocus>
+            <span class="title">搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input" autofocus>
         </div>
         <div id="searchResult"></div>
     </div>
