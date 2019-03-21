@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mcc321.github.io/"/>
-  <updated>2019-02-18T15:53:33.357Z</updated>
+  <updated>2019-03-21T14:26:44.038Z</updated>
   <id>http://mcc321.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AXX项目总结</title>
+    <link href="http://mcc321.github.io/2019/03/21/axx-xiang-mu-zong-jie/"/>
+    <id>http://mcc321.github.io/2019/03/21/axx-xiang-mu-zong-jie/</id>
+    <published>2019-03-21T13:43:29.000Z</published>
+    <updated>2019-03-21T14:26:44.038Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;img src=&quot;https://github.com/mcc321/mcc/blob/master/img/41.jpg?raw=true&quot; alt=&quot;mcc&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;AXX项目总结&quot;&gt;&lt;a href=&quot;#AXX项目总结&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="flask" scheme="http://mcc321.github.io/tags/flask/"/>
+    
+  </entry>
   
   <entry>
     <title>元宵节</title>
@@ -465,9 +490,9 @@
     </summary>
     
     
-      <category term="后台" scheme="http://mcc321.github.io/tags/%E5%90%8E%E5%8F%B0/"/>
-    
       <category term="flask" scheme="http://mcc321.github.io/tags/flask/"/>
+    
+      <category term="后台" scheme="http://mcc321.github.io/tags/%E5%90%8E%E5%8F%B0/"/>
     
       <category term="蓝图框架(blueprint)" scheme="http://mcc321.github.io/tags/%E8%93%9D%E5%9B%BE%E6%A1%86%E6%9E%B6-blueprint/"/>
     
@@ -499,33 +524,6 @@
       <category term="LaTex" scheme="http://mcc321.github.io/tags/LaTex/"/>
     
       <category term="Markdown" scheme="http://mcc321.github.io/tags/Markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于平面刚体自由度的计算</title>
-    <link href="http://mcc321.github.io/2018/12/22/guan-yu-ping-mian-gang-ti-zi-you-du-de-ji-suan/"/>
-    <id>http://mcc321.github.io/2018/12/22/guan-yu-ping-mian-gang-ti-zi-you-du-de-ji-suan/</id>
-    <published>2018-12-22T10:18:55.000Z</published>
-    <updated>2019-01-07T15:33:08.790Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;img src=&quot;https://github.com/mcc321/mcc/blob/master/img/7.jpg?raw=true&quot; alt=&quot;zhang不大的先生&quot;&gt;&lt;/p&gt;
-&lt;h1 id=&quot;刚体自由度判断问题&quot;&gt;&lt;a href=&quot;#刚体自由度判断问题&quot;
-        
-      
-    
-    </summary>
-    
-    
-      <category term="理论力学" scheme="http://mcc321.github.io/tags/%E7%90%86%E8%AE%BA%E5%8A%9B%E5%AD%A6/"/>
-    
-      <category term="自由度" scheme="http://mcc321.github.io/tags/%E8%87%AA%E7%94%B1%E5%BA%A6/"/>
     
   </entry>
   
