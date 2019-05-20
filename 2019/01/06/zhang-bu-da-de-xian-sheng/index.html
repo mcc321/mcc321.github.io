@@ -5,15 +5,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="计算机网络回顾, mcc">
+    <meta name="keywords" content="zhang不大的先生, mcc">
     <meta name="description" content="
-计算机网络基础回顾
-博文参考https://github.com/taizilongxu/interview_python
+zhang不大的先生这个名字是由一个学长的网名改编的，挺符合自己的，第一次使用hexo写博客，感觉还不错，希望自己能坚持下去。
 
-1.TCP的三次握手和四次挥手
-三次握手
-客户端发送SYN，并设置连接的序列号为一个随机数a
-服务端回复一个SY">
+
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>计算机网络回顾 | mcc</title>
+    <title>zhang不大的先生 | mcc</title>
     <link rel="icon" type="image/png" href="/icon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -216,13 +213,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('https://github.com/mcc321/mcc/blob/master/img/5.jpg?raw=true')">
+<div class="bg-cover post-cover" style="background-image: url('https://github.com/mcc321/mcc/blob/master/img/1.jpg?raw=true')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        计算机网络回顾
+                        zhang不大的先生
                     </div>
                 </div>
             </div>
@@ -333,113 +330,36 @@
             
             <div class="article-tag">
                 
-                <a href="/tags/计算机网络/" target="_blank">
-                    <span class="chip bg-color">计算机网络</span>
+                <a href="/tags/原则没有例外/" target="_blank">
+                    <span class="chip bg-color">原则没有例外</span>
                 </a>
                 
             </div>
             
             <div class="post-info">
                 
+                <span class="post-cate">
+                    <i class="fa fa-bookmark fa-fw icon-category"></i>
+                    
+                    <a href="/categories/Markdown/" class="post-category" target="_blank">
+                        Markdown
+                    </a>
+                    
+                </span>
+                
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2019-01-09
+                    <i class="fa fa-clock-o fa-fw"></i>2019-01-06
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><img src="https://github.com/mcc321/mcc/blob/master/img/5.jpg?raw=true" alt="mcc"></p>
-<h1 id="计算机网络基础回顾"><a href="#计算机网络基础回顾" class="headerlink" title="计算机网络基础回顾"></a>计算机网络基础回顾</h1><blockquote>
-<p>博文参考<a href="https://github.com/taizilongxu/interview_python" target="_blank" rel="noopener">https://github.com/taizilongxu/interview_python</a></p>
-</blockquote>
-<h2 id="1-TCP的三次握手和四次挥手"><a href="#1-TCP的三次握手和四次挥手" class="headerlink" title="1.TCP的三次握手和四次挥手"></a>1.TCP的三次握手和四次挥手</h2><blockquote>
-<h5 id="三次握手"><a href="#三次握手" class="headerlink" title="三次握手"></a>三次握手</h5><ul>
-<li>客户端发送SYN，并设置连接的序列号为一个随机数a</li>
-<li>服务端回复一个SYN/ACK,ACK的确认码为a+1，同时设置SYN/ACK序列号为另一随机数b</li>
-<li>客户端回复ACK。服务端收到ACK后完成三次握手，进入创建连接状态，并设定包的序列号为a+1,相应设定为b+1</li>
-</ul>
-</blockquote>
-<blockquote>
-<h5 id="四次挥手"><a href="#四次挥手" class="headerlink" title="四次挥手"></a>四次挥手</h5><ul>
-<li>注:中断可以是客户端也可以是服务端</li>
-<li>客户端发送FIN=1，进入FIN-WAIT状态，该状态只接收数据，不发送数据</li>
-<li>服务器端接受FIN=1，发送ACK=1的剩余数据分段，确认客户端FIN信息</li>
-<li>服务端等到所有数据传输完成，向客户端发送FIN=1的数据分段，并进入CLOSE-WAIT,等待客户端发送ACK=1确认报文。</li>
-<li>客户端收到服务端发来的FIN=1报文，返回ACK=1的确认报文，为了防止服务器未收到重发，进入TIME-WAIT状态，服务器接收到报文关闭连接，客户端等待2ms未收到回复则认为关闭成功，客户端关闭连接</li>
-</ul>
-</blockquote>
-<h2 id="2-cookie和session"><a href="#2-cookie和session" class="headerlink" title="2.cookie和session"></a>2.cookie和session</h2><table>
-<thead>
-<tr>
-<th></th>
-<th>Cookie</th>
-<th>Session</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>储存位置</td>
-<td>客户端</td>
-<td>服务器端</td>
-</tr>
-<tr>
-<td>目的</td>
-<td>跟踪会话，也可以保存用户偏好设置或者保存用户名密码等</td>
-<td>跟踪会话</td>
-</tr>
-<tr>
-<td>安全性</td>
-<td>不安全</td>
-<td>安全</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>session技术是要使用到cookie的，之所以出现session技术，主要是为了安全。</p>
-</blockquote>
-<h2 id="3-常用状态码"><a href="#3-常用状态码" class="headerlink" title="3.常用状态码"></a>3.常用状态码</h2><table>
-<thead>
-<tr>
-<th>状态码</th>
-<th>定义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1xx 报告</td>
-<td>接收到请求，继续进程</td>
-</tr>
-<tr>
-<td>2xx 成功</td>
-<td>步骤成功接收，被理解，并被接受</td>
-</tr>
-<tr>
-<td>3xx 重定向</td>
-<td>为了完成请求,必须采取进一步措施</td>
-</tr>
-<tr>
-<td>4xx 客户端出错</td>
-<td>请求包括错的顺序或不能完成</td>
-</tr>
-<tr>
-<td>5xx 服务器出错</td>
-<td>服务器无法完成显然有效的请求</td>
-</tr>
-</tbody>
-</table>
-<h2 id="4-CGI和WSGI"><a href="#4-CGI和WSGI" class="headerlink" title="4.CGI和WSGI"></a>4.CGI和WSGI</h2><blockquote>
-<ul>
-<li><p>CGI是通用网关接口，是连接web服务器和应用程序的接口，用户通过CGI来获取动态数据或文件等。 CGI程序是一个独立的程序，它可以用几乎所有语言来写，包括perl，c，lua，python等等。</p>
-</li>
-<li><p>WSGI, Web Server Gateway Interface，是Python应用程序或框架和Web服务器之间的一种接口，WSGI的其中一个目的就是让用户可以用统一的语言(Python)编写前后端。</p>
-</li>
-</ul>
-</blockquote>
-<h2 id="5-Ajax"><a href="#5-Ajax" class="headerlink" title="5.Ajax"></a>5.Ajax</h2><blockquote>
-<p>AJAX,Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）, 是与在不重新加载整个页面的情况下，与服务器交换数据并更新部分网页的技术。</p>
-</blockquote>
+                <p><img src="https://github.com/mcc321/mcc/blob/master/img/2.jpg?raw=true" alt="zhang不大的先生"></p>
+<h1 id="zhang不大的先生"><a href="#zhang不大的先生" class="headerlink" title="zhang不大的先生"></a>zhang不大的先生</h1><p>这个名字是由一个学长的网名改编的，挺符合自己的，第一次使用hexo写博客，感觉还不错，希望自己能坚持下去。</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ggelTwgQvLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
             </div>
             <hr>
@@ -461,7 +381,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="http://mcc321.github.io" class="b-link-green">mcc</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/01/09/ji-suan-ji-wang-luo-hui-gu/" class="b-link-green">计算机网络回顾</a>
+                    <a href="/2019/01/06/zhang-bu-da-de-xian-sheng/" class="b-link-green">zhang不大的先生</a>
                 </p>
             </div>
         </div>
@@ -483,7 +403,7 @@
         repo: 'mcc321.github.io',
         owner: 'mcc321',
         admin: ["mcc321"],
-        id: '2019-01-09T01-20-21',
+        id: '2019-01-06T23-52-54',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -507,22 +427,26 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">上一篇</div>
             <div class="card">
-                <a href="/2019/01/14/qt-c-xue-xi-ji-lu-yi/">
+                <a href="/2019/01/09/ji-suan-ji-wang-luo-hui-gu/">
                     <div class="card-image">
                         
+                        <img src="https://github.com/mcc321/mcc/blob/master/img/5.jpg?raw=true" class="responsive-img" alt="计算机网络回顾">
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="qt-c++学习记录(一)">
-                        
-                        <span class="card-title">qt-c++学习记录(一)</span>
+                        <span class="card-title">计算机网络回顾</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">信号槽
-信号与槽
-最近参加了一个模仿机器人大赛，要求用qt结合视觉方面实现魔方模式识别，对于自己来说算是比较有挑战性的一次比赛了，除了要重新学习一年级学的c++还要新学qt，再就是补习opencv了，也好久没写视觉代码了，感觉生了许多，博客</div>
+                    <div class="summary">
+计算机网络基础回顾
+博文参考https://github.com/taizilongxu/interview_python
+
+1.TCP的三次握手和四次挥手
+三次握手
+客户端发送SYN，并设置连接的序列号为一个随机数a
+服务端回复一个SY</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-14
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-09
                         </span>
                         <span class="publish-author">
                             
@@ -535,8 +459,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/qt/" target="_blank">
-                        <span class="chip bg-color">qt</span>
+                    <a href="/tags/计算机网络/" target="_blank">
+                        <span class="chip bg-color">计算机网络</span>
                     </a>
                     
                 </div>
@@ -548,32 +472,28 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2019/01/06/zhang-bu-da-de-xian-sheng/">
+                <a href="/2019/01/05/guan-yu-rui-jie-xiao-yuan-wang-ren-zheng-ke-hu-duan-shan-tui-de-jie-jue-fang-an/">
                     <div class="card-image">
                         
-                        <img src="https://github.com/mcc321/mcc/blob/master/img/1.jpg?raw=true" class="responsive-img" alt="zhang不大的先生">
+                        <img src="https://github.com/mcc321/mcc/blob/master/img/16.jpg?raw=true" class="responsive-img" alt="关于锐捷校园网认证客户端闪退的解决方案">
                         
-                        <span class="card-title">zhang不大的先生</span>
+                        <span class="card-title">关于锐捷校园网认证客户端闪退的解决方案</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary">
-zhang不大的先生这个名字是由一个学长的网名改编的，挺符合自己的，第一次使用hexo写博客，感觉还不错，希望自己能坚持下去。
+锐捷校园闪退问题解决
+最近不知道为什么，校园网认证客户端只要点击认证自动闪退，苦恼了很久，最终还是顺利解决了，分享一下直接将一下解决方法吧，最近还是挺忙的，写这一篇博客也是挺纠结的，不过问题中算是解决了
 
-
-</div>
+1.首先安装mentohust网</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-05
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Markdown/" class="post-category" target="_blank">
-                                    Markdown
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            mcc
                             
                         </span>
                     </div>
@@ -581,8 +501,8 @@ zhang不大的先生这个名字是由一个学长的网名改编的，挺符合
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/原则没有例外/" target="_blank">
-                        <span class="chip bg-color">原则没有例外</span>
+                    <a href="/tags/校园网/" target="_blank">
+                        <span class="chip bg-color">校园网</span>
                     </a>
                     
                 </div>
